@@ -3,76 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>XizoaHub Web Stories - Visual Tech Updates</title>
+    <title>XizoaHub Stories – Web Stories</title>
+
     <style>
-        :root { --primary: #d32f2f; --dark: #111; --light: #f4f4f4; }
-        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; margin: 0; padding: 0; background: var(--light); color: var(--dark); }
-        
-        /* Header */
-        header { background: #fff; padding: 15px 20px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); display: flex; justify-content: space-between; align-items: center; }
-        .logo { font-weight: 800; font-size: 1.5rem; text-decoration: none; color: var(--dark); }
-        .logo span { color: var(--primary); }
-        .btn-main { background: var(--dark); color: #fff; padding: 8px 15px; border-radius: 5px; text-decoration: none; font-size: 0.9rem; }
+        body {
+            margin: 0;
+            font-family: system-ui, sans-serif;
+            background: #0d0d0d;
+            color: #fff;
+        }
 
-        /* Hero Section */
-        .hero { text-align: center; padding: 40px 20px; }
-        .hero h1 { margin: 0 0 10px; font-size: 2rem; }
-        .hero p { color: #666; margin: 0; }
+        header {
+            padding: 20px;
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            background: #111;
+            border-bottom: 1px solid #222;
+        }
 
-        /* Grid Container */
-        .container { max-width: 1000px; margin: 0 auto; padding: 20px; display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
+        header span {
+            color: #d32f2f;
+        }
 
-        /* Story Card */
-        .card { background: #fff; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 8px rgba(0,0,0,0.1); transition: transform 0.3s ease; }
-        .card:hover { transform: translateY(-5px); }
-        .card-img { width: 100%; height: 400px; object-fit: cover; background: #ddd; }
-        .card-body { padding: 15px; }
-        .tag { background: #e3f2fd; color: #1565c0; padding: 4px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
-        .card-title { font-size: 1.2rem; margin: 10px 0; font-weight: 700; line-height: 1.4; }
-        .btn-view { display: block; width: 100%; text-align: center; background: var(--primary); color: #fff; padding: 10px 0; border-radius: 6px; text-decoration: none; font-weight: 600; margin-top: 10px; }
-        
-        /* Footer */
-        footer { text-align: center; padding: 30px; color: #777; font-size: 0.9rem; margin-top: 20px; border-top: 1px solid #ddd; }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 25px;
+            padding: 25px;
+        }
+
+        .card {
+            background: #1a1a1a;
+            border-radius: 14px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0,0,0,0.45);
+            transition: 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+        }
+
+        .card img {
+            width: 100%;
+            height: 420px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 16px;
+        }
+
+        .tag {
+            font-size: 12px;
+            background: #2c2c2c;
+            padding: 5px 10px;
+            border-radius: 6px;
+            display: inline-block;
+            margin-bottom: 8px;
+            color: #d32f2f;
+            font-weight: 600;
+        }
+
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 10px;
+        }
+
+        .btn {
+            display: block;
+            text-decoration: none;
+            background: #d32f2f;
+            text-align: center;
+            padding: 10px 0;
+            border-radius: 8px;
+            margin-top: 12px;
+            color: #fff;
+            font-weight: 600;
+        }
+
+        footer {
+            padding: 25px;
+            text-align: center;
+            font-size: 14px;
+            color: #777;
+            margin-top: 20px;
+            border-top: 1px solid #222;
+        }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <a href="https://xizoa.com" class="logo">Xizoa<span>Hub</span> Stories</a>
-        <a href="https://xizoa.com" class="btn-main">Visit Main Site</a>
-    </header>
+<header>
+    Xizoa<span>Hub</span> Stories
+</header>
 
-    <div class="hero">
-        <h1>Latest Visual Stories ⚡</h1>
-        <p>Tech, Gaming aur Gadgets ki duniya, shorts mein.</p>
+<div class="container">
+
+    <!-- Story 1 – Active -->
+    <div class="card">
+        <img src="https://xizoa.com/assets/cover.jpg" alt="">
+        <div class="content">
+            <div class="tag">Gadgets</div>
+            <div class="title">Best Earbuds under ₹1000 (Visual Story)</div>
+            <a href="earbuds-story.html" class="btn">Watch Story ▶</a>
+        </div>
     </div>
 
-    <div class="container">
-
-        <div class="card">
-            <img src="0000000000000" class="card-img" alt="Earbuds Cover">
-            <div class="card-body">
-                <span class="tag">Gadgets</span>
-                <div class="card-title">Best Wireless Earbuds Under ₹1000 (2025 Review)</div>
-                <a href="earbuds-story.html" class="btn-view">Watch Story ▶</a>
-            </div>
+    <!-- Story 2 – Coming Soon -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x500/111111/ffffff?text=Coming+Soon" alt="">
+        <div class="content">
+            <div class="tag">Mobiles</div>
+            <div class="title">Best Smartphones under ₹15000 (2025)</div>
+            <a class="btn" style="background:#555;">Coming Soon</a>
         </div>
-
-        <div class="card">
-            <img src="https://via.placeholder.com/300x500?text=Gaming+Phone" class="card-img" alt="Coming Soon">
-            <div class="card-body">
-                <span class="tag">Gaming</span>
-                <div class="card-title">Top 5 Gaming Phones Under 15000 (Coming Soon)</div>
-                <a href="#" class="btn-view" style="background:#777;">Coming Soon</a>
-            </div>
-        </div>
-
     </div>
 
-    <footer>
-        &copy; 2025 XizoaHub. All rights reserved. <br>
-        <a href="https://xizoa.com" style="color:#d32f2f; text-decoration:none;">Go to Xizoa.com</a>
-    </footer>
+    <!-- Story 3 – Coming Soon -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x500/111111/ffffff?text=Gaming+Phones" alt="">
+        <div class="content">
+            <div class="tag">Gaming</div>
+            <div class="title">Top 5 Gaming Phones under ₹20000</div>
+            <a class="btn" style="background:#555;">Coming Soon</a>
+        </div>
+    </div>
+
+    <!-- Story 4 – Coming Soon -->
+    <div class="card">
+        <img src="https://via.placeholder.com/300x500/111111/ffffff?text=Tech+News" alt="">
+        <div class="content">
+            <div class="tag">Tech News</div>
+            <div class="title">Top Tech News Highlights (2025)</div>
+            <a class="btn" style="background:#555;">Coming Soon</a>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+    © 2025 XizoaHub • Web Stories Platform  
+</footer>
 
 </body>
 </html>
